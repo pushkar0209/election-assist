@@ -9,6 +9,8 @@ import { useUser } from "@/context/UserContext";
 import { Card, CardHeader, CardContent } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 
+// Main entry point for the ElectoGuide AI Dashboard
+// Production-ready for Vercel deployment
 export default function Home() {
   const { profile } = useUser();
   const journeyProgress = profile.journeyProgress || [];
